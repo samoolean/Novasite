@@ -233,10 +233,10 @@ section { padding: 40px 6%; }
 header {
 
     position: fixed;
-    width: 100%;
+    width: 100vw;
     top: 0;
-    right: 0;
-    /* z-index: 1000; */
+    /* right: 0; */
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -759,6 +759,10 @@ footer{
 
     }
 
+    .navbar { 
+        display: grid; 
+    }
+
     .footer-section{
 
         display: flex;
@@ -780,11 +784,17 @@ footer{
 
         display: flex;
         flex-direction: column;
-        width: 20%;
+
+        svg{
+
+            width: 16px;
+            height: 16px;
+
+        }
 
         h3{
 
-            font-size: 8px;
+            font-size: 12px;
 
         }
 
