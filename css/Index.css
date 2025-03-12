@@ -674,11 +674,16 @@ header {
 
 }
 
-/*.contsec5{
+.contsec5{
 
-    
+    img{
 
-}*/
+        height:  calc(var(--img-size-y)*12);
+        width:  calc(var(--img-size-x)*12);
+
+    }
+
+}
 
 /* CSS pour le footer  */
 
