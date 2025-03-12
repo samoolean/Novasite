@@ -8,7 +8,8 @@
 
 --img-size-y: calc(1.6vh*1.6);
 --img-size-x: calc(1.6vw*1.6);
---img-size : calc(1.6vw*6)
+--img-size : calc(1.6vw*6);
+scrollbar-width: 12px;
 
 
 }
@@ -92,7 +93,7 @@ hr{
 
 /* width */
 ::-webkit-scrollbar {
-    width: 14px;
+    width: 12px;
     scrollbar-color : var(--first-color) rgba(255, 255, 255, 0);
     border-radius: 26px !important;
 
@@ -137,6 +138,7 @@ a {
     vertical-align: 0%;
     padding: 0%;
     margin: 0%;
+    outline: 1px solid red;
 
 }
 
@@ -738,3 +740,54 @@ footer{
         max-width: 540px;
     }
 }*/
+
+@media (max-width: 900px) {
+
+    .contsec1 {
+        max-width: 611px;
+    }
+
+    .dropzone{
+
+        width: 125px;
+
+    }
+
+    .btn{
+
+        width: 19vw;
+
+    }
+
+    .footer-section{
+
+        display: flex;
+        flex-direction: column;
+
+        h3{
+
+            font-size: 12px;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .footer-section{
+
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+
+        h3{
+
+            font-size: 8px;
+
+        }
+
+    }
+
+}
