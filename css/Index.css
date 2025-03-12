@@ -743,6 +743,8 @@ footer{
 
 @media (max-width: 900px) {
 
+
+
     .contsec3{
 
         display: grid;
@@ -839,6 +841,20 @@ footer{
 
         }
 
+
+    }
+
+    .top-banner{
+
+        background-size: cover;
+        height: 100vh;
+
+        h1{
+
+            font-size: 75px;
+            font-weight: 200;
+
+        }
 
     }
 
