@@ -798,6 +798,48 @@ footer{
 
     }
 
+    .presentation-row-div1{
+
+        grid-row: 1/1;
+        grid-column: 1/5;
+
+    }
+
+    .presentation-row-div2{
+
+        grid-row: 2/2;
+        grid-column: 1/5;
+
+    }
+
+    .presentation-row-div3{
+
+        grid-row: 3/3;
+        grid-column: 1/5;
+
+    }
+
+    .presentation-row-div4{
+
+        grid-row: 4/4;
+        grid-column: 1/5;
+
+    }
+
+    .contgrid{
+
+        display: inline-block;
+        gap: 16vh;
+
+        div{
+
+            margin: 1.6vh;
+
+        }
+
+
+    }
+
 }
 
 @media (max-width: 400px) {
