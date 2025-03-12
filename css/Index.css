@@ -743,6 +743,28 @@ footer{
 
 @media (max-width: 900px) {
 
+    .contsec3{
+
+        display: grid;
+
+        .contsec3-left{
+
+            width: 100%;
+
+        }
+
+        .contsec3-right{
+
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            margin: 1.6vw;
+            margin-top: calc(1.6vh* 4);
+
+        }
+
+    }
+
     .contsec1 {
         max-width: 611px;
     }
