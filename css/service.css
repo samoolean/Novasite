@@ -186,6 +186,13 @@ ul, ol {
 
     }
 
+    p{
+
+        /* margin: 20%; */
+        text-align: center;
+
+    }
+
 }
 
 .service:hover{
