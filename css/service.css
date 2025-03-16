@@ -186,9 +186,6 @@ footer{
 
 }
 
-.show {right: 0; }
-
-
 @media screen and (min-width: 900px) {
     :root {
         --big-font-size: 6rem;
@@ -376,6 +373,10 @@ footer{
 
 }
 
+.show {
+    right: 0;
+}
+
 @media (max-width: 900px) {
 
     .service-select{
@@ -414,10 +415,6 @@ footer{
 
         }
 
-    }
-
-    .show {
-        right: 0;
     }
 
     /* comment for update */
