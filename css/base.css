@@ -59,7 +59,7 @@ body {
     line-height: 1.6;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    margin-top: 45px;
+    margin-top: 4rem;
 
 }
 
@@ -269,9 +269,11 @@ a {
 
 /*MEDIA QUERIES*/
 
+/* var(--header-height) */
+
 @media screen and (min-width: 900px) {
 
-    body { margin-top: var(--header-height); }
+    body { margin-top: 4rem; }
     .section-all { margin-bottom: var(--mb4); }
 
     .nav { height: calc(--header-height) + 1rem; justify-content: initial; }
