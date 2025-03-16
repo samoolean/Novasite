@@ -332,39 +332,10 @@ a {
 
 }
 
-/*HOME*/
-
-.home { background-color: var(--gray-color); }
-.home-container { height: calc(100vh - var(--header-height)); }
-.home-data { padding-top: 6rem; }
-
-.home-title {
-    align-self: center;
-    font-size: var(--big-font-size);
-    line-height: 1;
-    letter-spacing: .5rem;
-    margin-bottom: 4rem;
-}
-
-    .home-title span { font-size: var(--h1-font-size); }
-.home-img { position: absolute; right: 0; bottom: 0; width: 260px; }
-
-.button {
-    display: inline-block;
-    background-color: var(--first-color);
-    color: var(--white-color);
-    padding: 1rem;
-    font-size: var(--small-font-size);
-    font-weight: var(--font-semi);
-}
-
-
-
-
 /*MEDIA QUERIES*/
 
 @media screen and (min-width: 900px) {
-    body { margin: 0; }
+    body { margin-top: var(--header-height); }
     .section-all { margin-bottom: var(--mb4); }
 
     .nav { height: calc(--header-height) + 1rem; justify-content: initial; }
@@ -372,33 +343,10 @@ a {
     .nav-list { display: flex; }
     .nav-item { margin-left: var(--mb4); margin-bottom: 0; }
     .nav-toggle { display: none; }
-
-    .home-container { height: 100vh; }
-    .home-data { padding: 0; height: max-content; align-self: center; } 
-    .home-title { line-height: 0.8; letter-spacing: 1.5rem; }
-    .home-img { width: 370px; }
-
-    .collection-container { grid-template-columns: repeat(2, 1fr); grid-template-rows: 1fr; }
-    /* .collection-box { padding: 0.5rem 3rem 0; } */
-    .collection-img { width: 130px; }
-
-    .featured-container, .sponsors-container, .footer-container { grid-template-columns: repeat(4, 1fr); }
-        .footer-container { padding: 2rem 0; }
-
-    .offer-data { padding: 5rem 0; }
-
-    .new-container { grid-template-columns: repeat(3, 1fr); }
-
-    .newsletter-form { width: 440px; margin: 0 auto; }
 }
 
 @media screen and (min-width: 1024px) {
     .bd-grid { margin-right: auto; margin-left: auto; }
-    .home-data { padding-left: 7rem; }
-    .home-img { right: 15%; }
-
-    .collection-box { padding: 0.5rem 3rem 0; }
-    .footer-copy { font-size: var(--normal-font-size); }
 }
 
 

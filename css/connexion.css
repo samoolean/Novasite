@@ -73,6 +73,33 @@ hr{
 
 }
 
+/* scrollbar css */
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+    scrollbar-color : var(--first-color) rgba(255, 255, 255, 0);
+    border-radius: 26px !important;
+
+  }
+  
+  /* Track 
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  } */
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+
+    background: rgb(255, 224, 184);
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 185, 95);
+  }
+
 /* header css */
 
 .logo { 
