@@ -65,8 +65,8 @@ body {
 
 hr{
 
-    margin-bottom: 6vh;
-    border-color: #DFDBDB;
+    margin-bottom: 3vh;
+    /* border-color: #DFDBDB; */
     border-radius: 16px;
     border-style: solid;
 
