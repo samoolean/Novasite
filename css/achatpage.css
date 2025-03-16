@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
+/*@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
 body {
   background-color: #EEEEEE;
-}
+}*/
 
 form {
   padding: 24px;
@@ -17,16 +17,19 @@ form .reference-card {
   height: 38vmin;
   margin: 0 auto 36px auto;
 }
+
 form .reference-card.flipped .card.front {
   background-color: #888888;
   -webkit-transform: perspective(600px) rotateY(180deg);
   z-index: 1;
 }
+
 form .reference-card.flipped .card.back {
   background-color: #d5d5d5;
   -webkit-transform: perspective(600px) rotateY(360deg);
   z-index: 2;
 }
+
 form .reference-card .card {
   width: 57vmin;
   height: 38vmin;
@@ -181,7 +184,7 @@ form .material-btn {
   width: 300px;
   height: 48px;
   margin: 16px 0;
-  background-color: #42546e;
+  background-color: var(--first-color);
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
   will-change: background-color, box-shadow;
   color: white;
@@ -195,9 +198,9 @@ form .material-btn {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 form .material-btn:hover {
-  background-color: #39485e;
+  background-color: var(--second-color);
 }
 form .material-btn:active {
-  background-color: #2F3C4E;
+  background-color: var(--third-color);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
