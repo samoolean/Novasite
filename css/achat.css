@@ -80,3 +80,36 @@ section{
     transform: translateY(-80px);
 
 }
+
+@media (max-width: 900px){
+
+    .container-offer{
+
+        flex-direction: column;
+
+        .div-select-offer{
+
+            height: 430px;
+            width: 295px;
+
+        }
+
+        .div-select-offer:hover{
+
+            transform: translateY(-40px);
+
+        }
+
+    }
+
+    .div-select-offer {
+
+        p, h4 {
+
+            margin-bottom: 20px;
+
+        }
+
+    }
+
+}
