@@ -1,0 +1,206 @@
+/*@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
+body {
+  background-color: #EEEEEE;
+}*/
+
+form {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  height: auto;
+}
+form .reference-card {
+  position: relative;
+  width: 57vmin;
+  height: 38vmin;
+  margin: 0 auto 36px auto;
+}
+
+form .reference-card.flipped .card.front {
+  background-color: #888888;
+  -webkit-transform: perspective(600px) rotateY(180deg);
+  z-index: 1;
+}
+
+form .reference-card.flipped .card.back {
+  background-color: #d5d5d5;
+  -webkit-transform: perspective(600px) rotateY(360deg);
+  z-index: 2;
+}
+
+form .reference-card .card {
+  width: 57vmin;
+  height: 38vmin;
+  border-radius: 1.5vmin;
+  position: absolute;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: perspective(600px);
+  color: #2F3C4E;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  z-index: 3;
+}
+form .reference-card .card.front {
+  background-color: #d5d5d5;
+  -webkit-transform: perspective(600px) rotateY(0deg);
+  z-index: 2;
+}
+form .reference-card .card.back {
+  background-color: #888888;
+  -webkit-transform: perspective(600px) rotateY(180deg);
+  z-index: 1;
+}
+form .reference-card .front .card-icon {
+  position: absolute;
+  right: 3vmin;
+  bottom: 3vmin;
+  font-size: 7.5vmin;
+}
+form .reference-card .front .card-number {
+  font-size: 4.25vmin;
+  position: absolute;
+  top: calc(50% - 2vmin);
+  display: inline-flex;
+  margin: 0 3.5vmin;
+  padding: 0 1vmin;
+}
+form .reference-card .front .card-number > div {
+  margin-right: 1.6vmin;
+}
+form .reference-card .front .expiry-date-group {
+  position: absolute;
+  top: 61%;
+  right: 11.75vmin;
+  display: flex;
+  align-items: center;
+}
+form .reference-card .front .expiry-date-group .valid-thru {
+  text-transform: uppercase;
+  font-size: 1vmin;
+}
+form .reference-card .front .expiry-date-group .expiry-date {
+  margin-left: 1vmin;
+  font-size: 3vmin;
+  display: flex;
+}
+form .reference-card .front .cardholder {
+  font-size: 3vmin;
+  position: absolute;
+  text-transform: uppercase;
+  top: 80%;
+  left: 4.5vmin;
+}
+form .reference-card .back .mag-strip {
+  width: 100%;
+  height: 7vmin;
+  top: 6vmin;
+  position: absolute;
+  background-color: black;
+}
+form .reference-card .back .ccv-group {
+  width: 90%;
+  height: 9vmin;
+  top: 15vmin;
+  left: 5%;
+  position: absolute;
+  background-color: white;
+  display: inline-flex;
+}
+form .reference-card .back .ccv-group > div {
+  margin: 0.5vmin 1vmin 0 0;
+  font-size: 3vmin;
+}
+form .reference-card .back .ccv-group .sample-numbers {
+  margin-left: auto;
+}
+form .reference-card .back .ccv-group .ccv {
+  display: inline-flex;
+}
+form .reference-card .focused {
+  animation: colorBlink 0.5s ease infinite alternate;
+}
+@keyframes colorBlink {
+  from {
+    color: rgba(47, 60, 78, 0.5);
+  }
+  to {
+    color: #2f3c4e;
+  }
+}
+form .redesign-input-group {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 36px;
+  margin: 8px 0;
+  position: relative;
+}
+form .redesign-input-group input {
+  height: 36px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: none;
+}
+form .redesign-input-group input ~ label {
+  font-size: 0.9em;
+  position: absolute;
+  transform: translateY(12px);
+  transition: transform 0.2s ease;
+}
+form .redesign-input-group input:focus ~ label {
+  transform: translateY(-12px);
+  font-size: 0.75em;
+}
+form .redesign-input-group input:focus ~ .bar {
+  transform: scale(1);
+}
+form .redesign-input-group input.filled ~ label {
+  transform: translateY(-12px);
+  font-size: 0.75em;
+}
+form .redesign-input-group input ~ .bar {
+  width: 100%;
+  height: 1px;
+  background-color: #2F3C4E;
+  transform: scale(0);
+  transition: transform 0.2s ease;
+}
+form .multi-input-group {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+form .multi-input-group .redesign-input-group {
+  width: 90px;
+}
+form .material-btn {
+  display: flex;
+  width: 300px;
+  height: 48px;
+  margin: 16px 0;
+  background-color: var(--first-color);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  will-change: background-color, box-shadow;
+  color: white;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  letter-spacing: 2px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+form .material-btn:hover {
+  background-color: var(--second-color);
+}
+form .material-btn:active {
+  background-color: var(--third-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
